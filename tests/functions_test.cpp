@@ -21,7 +21,3 @@ TEST (DieFunction, CustomExitFunction) {
     ASSERT_EXIT(die(1), ::testing::ExitedWithCode(1), "Error");
 }
 
-int main (int argc, char **argv) {
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}
